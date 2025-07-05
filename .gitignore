@@ -1,0 +1,72 @@
+# node modules
+node_modules/
+
+# build output
+build/
+dist/
+out/
+
+# system files
+.DS_Store
+Thumbs.db
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+.ntvs
+*.njsproj
+*.sln
+
+# MacOS and Linux trash folder
+.Trash-*
+
+# local coverage reports
+coverage/
+
+# Optional npm cache directory
+.npm/
+
+# vite cache
+.vite/
+
+# next.js build output
+.next/
+
+# parcel cache
+.cache/
+
+# eslint cache
+.eslintcache
+
+# storybook build
+storybook-static/
+
+# test output
+jest-test-results.json
+
+# Typescript
+*.tsbuildinfo
+
+# yarn v2
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+.pnp.*

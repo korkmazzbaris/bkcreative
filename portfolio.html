@@ -1,0 +1,363 @@
+<html>
+
+<head>
+    <title>Barış Korkmaz | Portföyüm</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <script src="portfolio.js"></script>
+
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-footer">
+                    <img src="img/bk-logo.png" style="height: 80px;" alt=""></div>
+            </div>
+
+            <nav>
+                <a href="index.html">Ana Sayfa</a>
+                <a href="#about">Hakkımda</a>
+                <a href="#services">Hizmetlerim</a>
+                <a href="portfolio.html" class="active">Portföyüm</a>
+                <a href="#process">Nasıl Çalışırım?</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="portfolio-section">
+        <div class="container">
+
+            <!-- Loader -->
+            <div id="portfolio-loader" class="portfolio-loader">
+                <div class="loader-spinner"></div>
+                <p>Projeler yükleniyor...</p>
+            </div>
+
+            <div class="portfolio-header text-center">
+                <div class="badge">Portföyüm</div>
+                <h2 class="section-title">Tüm Projelerim</h2>
+                <p class="section-subtitle">
+                    Farklı kategorilerde gerçekleştiridiğim projeleri keşfedin. Her proje özenle tasarlanmış ve
+                    kullanıcı deneyimi odaklı geliştirilmiştir.
+                </p>
+            </div>
+
+            <!-- Filters -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active">Tümü</button>
+                <button class="filter-btn">UI/UX Tasarımı</button>
+                <button class="filter-btn">Sosyal Medya Yönetimi</button>
+                <button class="filter-btn">Video Kurgu</button>
+                <button class="filter-btn">Kurumsal Kimlik Tasarımı</button>
+            </div>
+
+            <div class="custom-project-grid">
+                <!-- Tek bir proje kartı -->
+                <div class="custom-project-card" data-id="kidonki">
+                    <div class="custom-project-image">
+                        <img src="./img/kidonki.jpg" alt="Project Title">
+                        <div class="custom-overlay"></div>
+                        <div class="custom-icon-btn">
+                            <svg class="custom-icon">...</svg>
+                        </div>
+                    </div>
+                    <div class="custom-project-content">
+                        <div class="custom-category">UI/UX Tasarımı</div>
+                        <h3 class="custom-title">Kidonki</h3>
+                        <p class="custom-description">Booking projesi için gerçekleştirdiğim arayüz tasarımı. </p>
+                        <div class="custom-tech-tags">
+                            <span class="custom-tag">Figma</span>
+                            <span class="custom-tag">Adobe XD</span>
+                        </div>
+                        <a href="#" class="custom-project-link">
+                            <span>Projeyi İncele</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-project-card" data-id="amphi">
+                    <div class="custom-project-image">
+                        <img src="./img/Behance - Amphi Social.jpg" alt="Project Title">
+                        <div class="custom-overlay"></div>
+                        <div class="custom-icon-btn">
+                            <svg class="custom-icon">...</svg>
+                        </div>
+                    </div>
+                    <div class="custom-project-content">
+                        <div class="custom-category">Sosyal Medya Yönetimi</div>
+                        <h3 class="custom-title">Amphi Social</h3>
+                        <p class="custom-description">Amphi Social sosyal medya hesabı için oluşturduğum post
+                            tasarımları.</p>
+                        <div class="custom-tech-tags">
+                            <span class="custom-tag">Adobe Illustrator</span>
+                            <span class="custom-tag">Adobe Photoshop</span>
+                            <span class="custom-tag">Canva</span>
+                        </div>
+                        <a href="#" class="custom-project-link">
+                            <span>Projeyi İncele</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-project-card" data-id="nesin">
+                    <div class="custom-project-image">
+                        <img src="./img/nesin.jpg" alt="Project Title">
+                        <div class="custom-overlay"></div>
+                        <div class="custom-icon-btn">
+                            <svg class="custom-icon">...</svg>
+                        </div>
+                    </div>
+                    <div class="custom-project-content">
+                        <div class="custom-category">UI/UX Tasarımı</div>
+                        <h3 class="custom-title">Nesin Sanat Köyü</h3>
+                        <p class="custom-description">Nesin Sanat Köyü için hazırlamış olduğum landing page tasarımı sizlerle. Minimal bir tasarım yolu izlenmiştir.
+                        </p>
+                        <div class="custom-tech-tags">
+                            <span class="custom-tag">Figma</span>
+                        </div>
+                        <a href="#" class="custom-project-link">
+                            <span>Projeyi İncele</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-project-card" data-id="homeros">
+                    <div class="custom-project-image">
+                        <img src="./img/homeros.jpg" alt="Project Title">
+                        <div class="custom-overlay"></div>
+                        <div class="custom-icon-btn">
+                            <svg class="custom-icon">...</svg>
+                        </div>
+                    </div>
+                    <div class="custom-project-content">
+                        <div class="custom-category">UI/UX Tasarımı</div>
+                        <h3 class="custom-title">Homeros</h3>
+                        <p class="custom-description">Custom GPT olan Homeros için gerçekleştirmiş olduğum minimal ana sayfa tasarımı.
+                        </p>
+                        <div class="custom-tech-tags">
+                            <span class="custom-tag">Figma</span>
+                        </div>
+                        <a href="#" class="custom-project-link">
+                            <span>Projeyi İncele</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-project-card" data-id="amphi-landing">
+                    <div class="custom-project-image">
+                        <img src="./img/amphi-landing.jpg" alt="Project Title">
+                        <div class="custom-overlay"></div>
+                        <div class="custom-icon-btn">
+                            <svg class="custom-icon">...</svg>
+                        </div>
+                    </div>
+                    <div class="custom-project-content">
+                        <div class="custom-category">UI/UX Tasarımı</div>
+                        <h3 class="custom-title">Amphi Social</h3>
+                        <p class="custom-description">
+                            Amphi Social için hazırlamış olduğum ana sayfa tasarımı. Tasarım Figma üzerinden gerçekleşmiştir.
+                        </p>
+                        <div class="custom-tech-tags">
+                            <span class="custom-tag">Figma</span>
+                        </div>
+                        <a href="#" class="custom-project-link">
+                            <span>Projeyi İncele</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-project-card" data-id="golden-mane">
+                    <div class="custom-project-image">
+                        <img src="./img/golden-mane.png" alt="Project Title">
+                        <div class="custom-overlay"></div>
+                        <div class="custom-icon-btn">
+                            <svg class="custom-icon">...</svg>
+                        </div>
+                    </div>
+                    <div class="custom-project-content">
+                        <div class="custom-category">Kurumsal Kimlik Tasarımı</div>
+                        <h3 class="custom-title">GoldenMane Services</h3>
+                        <p class="custom-description">Bir temizlik şirketi olan GoldenMane için hazırlamış olduğum logo tasarımı.
+                        </p>
+                        <div class="custom-tech-tags">
+                            <span class="custom-tag">Adobe Illustrator</span>
+                            <span class="custom-tag">Adobe Photoshop</span>
+                        </div>
+                        <a href="#" class="custom-project-link">
+                            <span>Projeyi İncele</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-project-card" data-id="patern">
+                    <div class="custom-project-image">
+                        <img src="./img/patern.jpg" alt="Project Title">
+                        <div class="custom-overlay"></div>
+                        <div class="custom-icon-btn">
+                            <svg class="custom-icon">...</svg>
+                        </div>
+                    </div>
+                    <div class="custom-project-content">
+                        <div class="custom-category">Kurumsal Kimlik Tasarımı</div>
+                        <h3 class="custom-title">Patern Eğitim</h3>
+                        <p class="custom-description">Patern Eğitim için hazırlamış olduğum antetli kağıt çalışmaları.
+                        </p>
+                        <div class="custom-tech-tags">
+                            <span class="custom-tag">Adobe Illustrator</span>
+                        </div>
+                        <a href="#" class="custom-project-link">
+                            <span>Projeyi İncele</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-project-card" data-id="cpr-logistic">
+                    <div class="custom-project-image">
+                        <img src="./img/cpr-cover.jpg" alt="Project Title">
+                        <div class="custom-overlay"></div>
+                        <div class="custom-icon-btn">
+                            <svg class="custom-icon">...</svg>
+                        </div>
+                    </div>
+                    <div class="custom-project-content">
+                        <div class="custom-category">Sosyal Medya Yönetimi</div>
+                        <h3 class="custom-title">CPR Logistic</h3>
+                        <p class="custom-description">Lojistik şirketi için hazırlamış olduğum sosyal medya post tasarımları.
+                        </p>
+                        <div class="custom-tech-tags">
+                            <span class="custom-tag">Adobe Illustrator</span>
+                        </div>
+                        <a href="#" class="custom-project-link">
+                            <span>Projeyi İncele</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-project-card" data-id="broccoli-app">
+                    <div class="custom-project-image">
+                        <img src="./img/broccoli-cover.jpg" alt="Project Title">
+                        <div class="custom-overlay"></div>
+                        <div class="custom-icon-btn">
+                            <svg class="custom-icon">...</svg>
+                        </div>
+                    </div>
+                    <div class="custom-project-content">
+                        <div class="custom-category">UI/UX Tasarımı</div>
+                        <h3 class="custom-title">Broccoli Mobile App</h3>
+                        <p class="custom-description">Broccoli App bir diyet uygulamasıdır. Ben de bu uygulamanın arayüzünü tasarladım.
+                        </p>
+                        <div class="custom-tech-tags">
+                            <span class="custom-tag">Figma</span>
+                        </div>
+                        <a href="#" class="custom-project-link">
+                            <span>Projeyi İncele</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-project-card" data-id="dentalbuddy">
+                    <div class="custom-project-image">
+                        <img src="./img/dentalbuddy-cpver.jpg" alt="Project Title">
+                        <div class="custom-overlay"></div>
+                        <div class="custom-icon-btn">
+                            <svg class="custom-icon">...</svg>
+                        </div>
+                    </div>
+                    <div class="custom-project-content">
+                        <div class="custom-category">UI/UX Tasarımı</div>
+                        <h3 class="custom-title">DentalBuddy</h3>
+                        <p class="custom-description">DentalBuddy için hazırlamış olduğum landing page tasarımı.
+                        </p>
+                        <div class="custom-tech-tags">
+                            <span class="custom-tag">Figma</span>
+                        </div>
+                        <a href="#" class="custom-project-link">
+                            <span>Projeyi İncele</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-project-card" data-id="tedsa">
+                    <div class="custom-project-image">
+                        <img src="./img/tedsa.jpg" alt="Project Title">
+                        <div class="custom-overlay"></div>
+                        <div class="custom-icon-btn">
+                            <svg class="custom-icon">...</svg>
+                        </div>
+                    </div>
+                    <div class="custom-project-content">
+                        <div class="custom-category">Video Kurgu</div>
+                        <h3 class="custom-title">Sakarya Ted Koleji</h3>
+                        <p class="custom-description">NASA SPACEAPP CHALLENGE yarışmasında Sakarya Ted Koleji ekibi TEDSA'ya 1.lik kazandıran projenin hikayesi.
+                        </p>
+                        <div class="custom-tech-tags">
+                            <span class="custom-tag">Adobe Premiere Pro</span>
+                            <span class="custom-tag">Adobe After Effects</span>
+                        </div>
+                        <a href="#" class="custom-project-link">
+                            <span>Projeyi İncele</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Diğer kartlar aynı yapıda tekrar edilecek -->
+            </div>
+            <!-- Diğer projeler aynı yapıda devam eder -->
+        </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Main Footer Content -->
+            <div class="footer-top">
+
+                <!-- Navigation Links -->
+                <div class="footer-nav">
+                    <a href="#anasayfa">Ana Sayfa</a>
+                    <a href="#hakkimda">Hakkımda</a>
+                    <a href="#hizmetlerim">Hizmetlerim</a>
+                    <a href="#portföyüm">Portföyüm</a>
+                    <a href="#nasil-calisirim">Nasıl Çalışırım?</a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/korkmazzbaris/?next=%2F" aria-label="Instagram"
+                        target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+
+                    <a href="https://www.linkedin.com/in/korkmazbaris935/" aria-label="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin-in fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Barış Korkmaz. Tüm hakları saklıdır.</p>
+                <div class="footer-links">
+                    <a href="#">Gizlilik</a>
+                    <a href="#">Şartlar</a>
+                    <a href="#">Çerezler</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <button id="toTopBtn" title="Yukarı Çık">↑</button>
+
+</body>
+
+</html>

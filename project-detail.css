@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    background: #fff;
+    color: #121926;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 96px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 0 0 0 0;
+    color: #121926;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    text-decoration: none;
+    color: #2563eb;
+}
+
+.section-subtitle{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.project-detail-card {
+    padding: 0 !important;
+    margin-bottom: 128px !important;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none !important;
+}
+
+.project-detail-card h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #121926;
+}
+
+.project-detail-image, .project-detail-video {
+    max-width: 100%;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+    padding: 0;
+    display: block;
+}
+
+.project-detail-card p {
+    font-size: 1.1rem;
+    color: #374151;
+    margin: 0 0 12px 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 4px;
+    }
+
+    .project-detail-card {
+        padding: 0 !important;
+    }
+
+    .project-detail-card h1 {
+        font-size: 1.3rem;
+    }
+}
+
+.not-found, .not-found-icon {
+    display: none !important;
+}
+
+.footer {
+    background: #fff;
+    border-top: 1px solid #f3f4f6;
+  }
+  
+  .footer-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 48px 0;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-top {
+      flex-direction: row;
+    }
+  }
+  
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.3s;
+  }
+  
+  .footer-logo {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+    border-radius: 12px;
+    transition: transform 0.3s;
+  }
+  
+  .footer-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #121926;
+    font-family: "Inter", Arial, sans-serif;
+  }
+  
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    font-size: 14px;
+  }
+  
+  .footer-nav a {
+    color: #121926;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footer-nav a:hover {
+    color: #121926;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .footer-social a {
+    width: 40px;
+    height: 40px;
+    background: #f3f4f6;
+    text-decoration: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #121926;
+    transition: all 0.3s;
+  }
+  
+  .footer-social a:hover {
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #f3f4f6;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #6b7280;
+    gap: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .footer-links a {
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footer-links a:hover {
+    color: #121926;
+  }
+  
+  .logo-footer {
+    width: 200px;
+    object-fit: contain;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  #toTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  #toTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+  }
