@@ -13,9 +13,7 @@ h2 {
     font-size: 40px;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+/* Removed scroll-behavior: smooth; to let JavaScript handle smooth scrolling */
 
 body {
     margin: 0;
@@ -514,28 +512,30 @@ nav a:hover {
   }
   
   #toTopBtn {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 999;
-    background: linear-gradient(to right, #2563eb, #7c3aed);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 18px;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  #toTopBtn.show {
-    opacity: 1;
-    visibility: visible;
-  }
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#toTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
 .project-detail-card {
   background: #fff;

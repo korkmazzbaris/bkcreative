@@ -13,9 +13,7 @@ h2 {
   font-size: 40px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* Removed scroll-behavior: smooth; to let JavaScript handle smooth scrolling */
 
 body {
   margin: 0;
@@ -1257,13 +1255,15 @@ nav a:hover {
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 #toTopBtn.show {
   opacity: 1;
   visibility: visible;
+  transform: translateY(0);
 }
 
 .faq-arrow {

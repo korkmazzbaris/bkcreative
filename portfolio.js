@@ -74,10 +74,29 @@ document.addEventListener("DOMContentLoaded", function() {
             toTopBtn.classList.remove("show");
         }
     });
-    toTopBtn.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
+      toTopBtn.addEventListener("click", function () {
+        // Smooth scrolling with easing
+        const startPosition = window.pageYOffset;
+        const startTime = performance.now();
+        const duration = 1000; // 1 saniye
+
+        function easeInOutCubic(t) {
+          return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+        }
+
+        function animateScroll(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const easedProgress = easeInOutCubic(progress);
+          
+          const newPosition = startPosition * (1 - easedProgress);
+          window.scrollTo(0, newPosition);
+          
+          if (progress < 1) {
+            requestAnimationFrame(animateScroll);
+          }
+        }
+        
+        requestAnimationFrame(animateScroll);
+      });
 });
