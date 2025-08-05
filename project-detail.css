@@ -5,6 +5,169 @@ body {
     color: #121926;
 }
 
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #121926;
+    font-size: 24px;
+    min-width: 200px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #121926;
+    font-size: 16px;
+    transition: color 0.2s, font-weight 0.2s, font-size 0.2s,
+        font-variation-settings 0.2s;
+    font-weight: 400;
+    font-family: "Inter", Arial, sans-serif;
+    font-variation-settings: "wght" 400;
+}
+
+.nav-menu a:hover {
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: underline;
+    color: linear-gradient(to right, #3b82f6, #7c3aed);
+    font-variation-settings: "wght" 700;
+}
+
+.header-content .nav-menu a.active {
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: underline;
+    font-variation-settings: "wght" 700;
+    color: #121926;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #121926;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Mobile Responsive Header */
+@media (max-width: 768px) {
+    .header-content {
+        padding: 0 15px;
+    }
+    
+    .logo {
+        min-width: auto;
+    }
+    
+    .logo-footer img {
+        height: 60px !important;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 80px 30px 30px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-menu a {
+        font-size: 18px;
+        padding: 15px 0;
+        border-bottom: 1px solid #f0f0f0;
+        width: 100%;
+    }
+    
+    .nav-menu a:last-child {
+        border-bottom: none;
+    }
+    
+    .hamburger-menu {
+        display: flex;
+    }
+    
+    /* Hamburger Animation */
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    /* Overlay for mobile menu */
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 .container {
     max-width: 1120px;
     margin: 96px auto 0 auto;
@@ -238,4 +401,82 @@ body {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+/* Mobile Responsive Styles for Project Detail */
+@media (max-width: 768px) {
+    .container {
+        margin: 60px auto 0 auto;
+        gap: 30px;
+        padding: 0 15px;
+    }
+    
+    .back-link {
+        font-size: 16px;
+        margin: 0 0 0 0;
+    }
+    
+    .section-subtitle {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    .project-detail-card {
+        margin-bottom: 60px !important;
+    }
+    
+    .project-detail-card h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    .project-detail-card p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .project-detail-image, .project-detail-video {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Footer Responsive */
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer-container {
+        padding: 24px 15px;
+    }
+    
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-nav {
+        justify-content: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+    
+    /* General Typography */
+    h1, h2 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
 }
