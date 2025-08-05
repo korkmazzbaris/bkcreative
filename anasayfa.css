@@ -164,6 +164,17 @@ nav a:hover {
   color: #333;
   font-weight: 600;
   font-family: "Inter", Arial, sans-serif;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(to right, #3b82f6, #7c3aed);
+  color: white;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
 }
 
 .stats {
